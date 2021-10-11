@@ -5,10 +5,26 @@ import {
   PropsComp,
   GetInput,
   HandleForm,
-  ConstructorComp
+  ConstructorComp,
+  RenderComp
 } from "./components";
 
-class App extends Component {
+
+
+type MyState = {
+  name: string;
+};
+
+
+class App extends Component<{},MyState> {
+
+  constructor(props:{}) {
+    super(props);
+    this.state = {
+      name:"Alfaiz",
+    };
+  }
+
   render() {
     return (
       <>
@@ -21,6 +37,8 @@ class App extends Component {
           <GetInput />
           <HandleForm />
           <ConstructorComp />
+          <RenderComp name={this.state.name} />
+          <button onClick={()=>this.setState({name:"Alfaiz Khan"})}>Update Name</button>
         </div>
       </>
     );

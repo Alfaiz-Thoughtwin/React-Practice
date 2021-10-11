@@ -5,11 +5,11 @@ export class ConstructorComp extends Component<{}> {
 
     constructor(props:{}) {
         super(props);
-        console.log("Constructor Call");
+        console.log("Constructor Call (ConstructorComp)");
     };
 
     render() {
-        console.log("Render Call");
+        console.log("Render Call (ConstructorComp)");
         return (
             <>
                 <div className="container text-center border my-4">
