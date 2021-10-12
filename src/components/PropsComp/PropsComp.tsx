@@ -18,6 +18,7 @@ export class PropsComp extends Component<MyProps, MyState> {
         this.state = {
             isTrue: false,
         };
+        console.log("PropsComp Code 👇");
     };
 
     propsHandler = (event:any) => {
