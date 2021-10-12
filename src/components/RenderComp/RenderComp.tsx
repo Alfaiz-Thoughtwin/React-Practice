@@ -8,6 +8,7 @@ type MyProps = {
 export class RenderComp extends Component<MyProps> {
     constructor(props:MyProps) {
         super(props);
+        console.log("RenderComp Code 👇");
         console.log("#################################", this.props);
     }
     render() {

@@ -5,6 +5,7 @@ export class ConstructorComp extends Component<{}> {
 
     constructor(props:{}) {
         super(props);
+        console.log("ConstructorComp Code 👇");
         console.log("Constructor Call (ConstructorComp)");
     };
 
