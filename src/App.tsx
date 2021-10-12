@@ -7,7 +7,8 @@ import {
   HandleForm,
   ConstructorComp,
   RenderComp,
-  ComponentDidMountComp
+  ComponentDidMountComp,
+  ComponentDidUpdate
 } from "./components";
 
 
@@ -41,6 +42,7 @@ class App extends Component<{},MyState> {
           <RenderComp name={this.state.name} />
           <button onClick={()=>this.setState({name:"Alfaiz Khan"})}>Update Name</button>
           <ComponentDidMountComp />
+          <ComponentDidUpdate />
         </div>
       </>
     );
