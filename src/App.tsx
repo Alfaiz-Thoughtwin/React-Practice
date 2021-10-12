@@ -22,7 +22,7 @@ import {
 
 type MyState = {
   name: string;
-  value: any;
+  value: string;
 };
 
 
@@ -36,7 +36,7 @@ class App extends Component<{},MyState> {
     };
   }
 
-  handleChange = (event: any, newValue: any) => {
+  handleChange = (event: any, newValue: string) => {
     this.setState({value: newValue});
   };
 
