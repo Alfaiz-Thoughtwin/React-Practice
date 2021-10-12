@@ -9,3 +9,4 @@ export * from './RenderComp';
 export * from './ComponentDidMountComp';
 export * from './ComponentDidUpdate';
 export * from './ShouldComponentUpdate';
+export * from './ComponentWillUnmount';

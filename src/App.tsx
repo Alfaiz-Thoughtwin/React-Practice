@@ -15,7 +15,8 @@ import {
   RenderComp,
   ComponentDidMountComp,
   ComponentDidUpdate,
-  ShouldComponentUpdate
+  ShouldComponentUpdate,
+  ComponentWillUnmount
 } from "./components";
 
 
@@ -58,6 +59,7 @@ class App extends Component<{},MyState> {
                 <Tab label="Component Did Mount" value="8" />
                 <Tab label="Component Did Update" value="9" />
                 <Tab label="Should Component Update" value="10" />
+                <Tab label="Component Will Unmount" value="11" />
               </TabList>
             </Box>
 
@@ -103,6 +105,10 @@ class App extends Component<{},MyState> {
 
             <TabPanel value="10">
               <ShouldComponentUpdate />
+            </TabPanel>
+
+            <TabPanel value="11">
+              <ComponentWillUnmount />
             </TabPanel>
 
           </TabContext>
